@@ -1,0 +1,413 @@
+/*VARIABLES*/
+:root{
+    /* Colors */
+    --darkBlue: #202935;
+    --blue: #263342;
+    --mustard: #ff9900;
+
+    /* Sizes */
+    --block_height: 800px;
+    --block_width: 90%;
+}
+
+
+/* BODY block */
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    color: #003049;
+}
+body{
+    background-color: white;
+}
+.main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 1100px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* 1. INTRO PAGE */
+.intro{
+    height: var(--block_height);
+    width: var(--block_width);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.intro nav p{
+    width: 40%;
+    padding: 20px 40px;
+    font-family: Pacifico;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+.intro nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+.intro li{
+    padding: 20px 30px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+.intro li:hover{
+    background-color: var(--mustard);
+    border-radius: 20px;
+    color: white;
+    transition: border-radius 0.5s ease;
+}
+.intro a{
+    color: black;
+}
+.intro .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.content .text{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding: 60px;
+    line-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content .text a{
+    text-decoration: none;
+    color: black;
+}
+.content #maintext{
+    font-family: Poppins;
+    font-weight: 400;
+}
+#txt{
+    font-weight: 600;
+}
+#name{
+    color: var(--mustard);
+    font-weight: 800;
+}
+.text a{
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 25px;
+    border: 2px solid var(--mustard);
+    font-family: Poppins;
+}
+.text a:hover{
+    background-color: var(--mustard);
+    color: white;
+    border-radius: 25px;
+    transition: border-radius 0.5s ease;
+}
+.content .img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content .img img{
+    height: 500px;
+    width: 500px;
+}
+#txt{
+    font-size: 70px;
+}
+
+
+/* 2. ACADEMIC QUALIFICATIONS */
+.acad{
+    height: var(--block_height);
+    width: var(--block_width);
+    background-color: black;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    font-family: Poppins;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+}
+.acad .left{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    box-sizing: border-box  ;
+    color: var(--mustard);
+    display: flex;
+    align-items: center;
+}
+.acad .right{
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.acad .matter span{
+    font-weight: 700;
+}
+.acad .univ, .coll, .schl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right .univ:hover, .coll:hover, .schl:hover{
+    border: 2px solid var(--mustard);
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 50px 0;
+    transition: border-radius, padding 0.5s ease;
+}
+.acad .icon{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acad .matter, .icon{
+    margin: 40px 15px;
+}
+
+/* 3. SKILLS & CERTIFICATIONS */
+.skill{
+    height: var(--block_height);
+    width: var(--block_width);
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.skill .left{
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    font-family: Poppins;
+    color: var(--mustard);
+}
+.skill .bars:hover{ 
+    padding: 25px 0;
+    transition: all 0.5s ease;
+}
+.skill .top{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.skill .bars{
+    color: black;
+    padding: 25px;
+}
+.skill .cpp, .py, .java, .html{
+    margin: 20px 0;
+    padding: 15px 0;
+}
+.skill .bars .bar{
+    height: 20px;
+    width: 80%;
+    border: 2px solid var(--mustard);
+    margin: 10px 0 ;
+}
+.bars .bar .range{
+    box-sizing: border-box;
+    height: 20px;
+    background-color: #202935;
+    border: 2px solid #202935;
+}
+.bars .cpp .bar .range{
+    width: 70%;
+}
+.bars .py .bar .range{
+    width: 80%;
+}
+.bars .java .bar .range{
+    width: 60%;
+}
+.bars .html .bar .range{
+    width: 75%;
+}
+.skill .right{
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+    font-family: Poppins;
+    color: var(--mustard);
+}
+.skill .right .cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80%;
+    width: 100%;
+    padding: 50px 0;
+}
+.right .pro{
+    height: 50px;
+    width: 80%;
+    border: 2px solid var(--mustard);
+    margin: 20px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.right .pro:hover{
+    border: 2px solid var(--mustard);
+    background-color: #fcbf49;
+    padding: 40px 20px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+/* 4. PROJECTS */
+.projects{
+    height: var(--block_height);
+    width: var(--block_width);
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Poppins;
+    border-bottom: 2px solid black;
+}
+.projects .left{
+    height: 100%;
+    width: 35%;
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    box-sizing: border-box  ;
+    color: var(--mustard);
+    display: flex;
+    align-items: center;
+    font-family: 300;
+}
+.projects .right{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.projects .right .cont{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 3px solid var(--mustard);
+}
+.projects .right .cont #a{
+    height: 200px;
+    background-color: black;
+}
+.projects .right img{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 25px;
+}
+.projects .right .cont:hover{
+    box-sizing: border-box;
+    background-color: #fcbf49;
+    border-radius: 120px ;
+    transition: all 1s ease;
+    margin-top: 30px;
+}
+.projects .cont .matter{
+    padding: 40px;
+}
+.projects span{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* 5. CONTACT ME */
+.contact{
+    height: var(--block_height);
+    width: var(--block_width);
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-family: Poppins;
+    font-weight: 300;
+}
+.contact .photo{
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .txt{
+    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.contact h1{
+    color: var(--mustard);
+}
+.contact .txt a{
+    text-decoration: none;
+    height: 60px;
+    color: black;
+    padding: 10px;
+}
+.contact .txt a:hover{
+    height: 80px;
+    font-size: 45px;
+    transition: all 0.5s ease;
+}
+.contact img{
+    width: 400px;
+    height: 400px;
+}
